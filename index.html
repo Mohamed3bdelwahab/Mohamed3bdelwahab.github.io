@@ -31,13 +31,13 @@
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="pulse"></span> Enterprise Automation · Agentic AI · RPA</div>
         <h1>I architect <span>intelligent automation systems</span> that connect business processes, AI reasoning, and enterprise execution.</h1>
-        <p class="hero-lead">Automation Consultant, AI Solutions Architect, Agentic AI Engineer, and Senior RPA Developer with 10 years across software, automation, and workflow engineering, delivering solutions across finance, procurement, HR, investment operations, and customer operations.</p>
+        <p class="hero-lead">Automation Consultant, AI Solutions Architect, Agentic AI Engineer, and Senior RPA Developer with 10 years across software, automation, and workflow engineering—designing Agentic AI systems, enterprise RPA, legacy-system integrations, document intelligence, approval workflows, and human-controlled AI for business operations.</p>
         <div class="hero-actions">
           <a class="button primary" href="#work">Explore case studies</a>
           <a class="button secondary" href="https://github.com/Mohamed3bdelwahab">View GitHub</a>
         </div>
         <div class="signal-row" aria-label="Core focus areas">
-          <span>Agentic AI</span><span>UiPath</span><span>Power Platform</span><span>Enterprise Integration</span><span>Human-in-the-Loop</span>
+          <span>Agentic AI Systems</span><span>Enterprise RPA</span><span>Legacy Integration</span><span>Document Intelligence</span><span>Human-in-the-Loop</span>
         </div>
       </div>
 
@@ -88,25 +88,30 @@
     <section id="work" class="section-shell section-block">
       <div class="section-heading reveal">
         <p class="kicker">03 · Selected case studies</p>
-        <h2>AI reasoning where it helps. Deterministic controls where they matter.</h2>
+        <h2>Case studies organized by capability, control model, and business value.</h2>
+        <p class="section-intro">Each example shows the operating problem, the architecture/control pattern, and the evidence available without exposing confidential client systems.</p>
       </div>
       <div class="filter-bar reveal" role="group" aria-label="Filter case studies">
         <button class="filter-button is-active" type="button" data-project-filter="all" aria-pressed="true">All</button>
-        <button class="filter-button" type="button" data-project-filter="agentic-ai" aria-pressed="false">Agentic AI</button>
-        <button class="filter-button" type="button" data-project-filter="rpa" aria-pressed="false">RPA & Integration</button>
-        <button class="filter-button" type="button" data-project-filter="operations" aria-pressed="false">Business Operations</button>
-        <button class="filter-button" type="button" data-project-filter="public" aria-pressed="false">Public Work</button>
+        <button class="filter-button" type="button" data-project-filter="agentic-ai" aria-pressed="false">Agentic AI Systems</button>
+        <button class="filter-button" type="button" data-project-filter="rpa" aria-pressed="false">RPA & Legacy Integration</button>
+        <button class="filter-button" type="button" data-project-filter="operations" aria-pressed="false">Operational Workflows</button>
+        <button class="filter-button" type="button" data-project-filter="public" aria-pressed="false">Public Engineering</button>
       </div>
       <div class="work-grid" id="project-grid">
         <article class="project featured reveal" data-project-categories="agentic-ai operations">
           <div><span class="project-label">Enterprise architecture</span><h3>Multi-Agent Enterprise Workflow</h3><p>RAG and vector retrieval combined with tool selection, memory, API/browser actions, verification, and human approval for controlled cross-system execution.</p></div>
+          <div class="evidence-panel" aria-label="Sanitized architecture snapshot"><span>Knowledge / RAG</span><b>→</b><span>Reasoning & Routing</span><b>→</b><span>Tool / API Actions</span><b>→</b><span>Verification</span><b>→</b><span>Human Approval</span></div>
           <div class="project-details"><strong>Problem:</strong> Cross-system work needs contextual reasoning without uncontrolled autonomous execution.<br><strong>Architecture:</strong> RAG and vector retrieval feed specialized reasoning, tool/API actions, workflow memory, verification, and human approval gates.<br><strong>Value:</strong> AI reasoning stays separated from deterministic execution, making actions observable, reviewable, and auditable.</div>
+          <div class="evidence-note"><strong>Evidence:</strong> Sanitized architecture flow · control boundaries · human approval gate</div>
           <button class="project-toggle" type="button" aria-expanded="false">More detail</button>
           <div class="project-meta"><span>RAG</span><span>Vector Search</span><span>Tool Calling</span><span>HITL</span></div>
         </article>
         <article class="project private reveal delay-1" data-project-categories="agentic-ai rpa operations">
           <div><span class="project-label">Legacy integration</span><h3>Agentic AI + Legacy ERP</h3><p>Deterministic RPA exposed as a callable agent tool for controlled record insert/update operations with verification and exception handling.</p></div>
+          <div class="evidence-panel" aria-label="Sanitized architecture snapshot"><span>Agent Decision</span><b>→</b><span>RPA Tool Contract</span><b>→</b><span>Legacy ERP</span><b>→</b><span>Result Validation</span><b>→</b><span>Exception Path</span></div>
           <div class="project-details"><strong>Problem:</strong> Business-critical legacy applications may not expose reliable modern APIs.<br><strong>Architecture:</strong> The AI layer selects the required action; deterministic RPA performs the transaction and returns a result for validation and exception handling.<br><strong>Value:</strong> Legacy systems can participate in modern AI workflows without giving the AI uncontrolled direct access.</div>
+          <div class="evidence-note"><strong>Evidence:</strong> Sanitized integration pattern · deterministic transaction boundary · verification path</div>
           <button class="project-toggle" type="button" aria-expanded="false">More detail</button>
           <div class="project-meta"><span>RPA</span><span>ERP</span><span>Agents</span><span>Verification</span></div>
         </article>
@@ -124,13 +129,17 @@
         </article>
         <article class="project private reveal" data-project-categories="rpa operations">
           <div><span class="project-label">Document intelligence</span><h3>Intelligent Document Processing</h3><p>OCR, classification, extraction, validation, confidence-aware routing, and human review for document-heavy operations.</p></div>
+          <div class="evidence-panel" aria-label="Sanitized architecture snapshot"><span>Document Intake</span><b>→</b><span>OCR / Classify</span><b>→</b><span>Extract</span><b>→</b><span>Validate</span><b>→</b><span>Human Review</span></div>
           <div class="project-details"><strong>Problem:</strong> Document-heavy operations lose time to manual classification, extraction, and validation.<br><strong>Architecture:</strong> OCR, classification, extraction, validation, confidence-aware routing, and human review are separated into recoverable stages.<br><strong>Value:</strong> Documents move faster without sacrificing traceability, exception handling, or review quality.</div>
+          <div class="evidence-note"><strong>Evidence:</strong> Recoverable processing stages · confidence routing · review checkpoint</div>
           <button class="project-toggle" type="button" aria-expanded="false">More detail</button>
           <div class="project-meta"><span>OCR</span><span>Classification</span><span>Extraction</span><span>Validation</span></div>
         </article>
         <article class="project private reveal delay-1" data-project-categories="rpa operations">
           <div><span class="project-label">Procurement controls</span><h3>PR / PO Approval Architecture</h3><p>Dynamic routing by amount, hierarchy, department, and role with rejection/resubmission, SLA escalation, segregation of duties, ERP integration, and audit history.</p></div>
+          <div class="evidence-panel" aria-label="Sanitized architecture snapshot"><span>Request</span><b>→</b><span>Rules / SoD</span><b>→</b><span>Approver Route</span><b>→</b><span>ERP Update</span><b>→</b><span>Audit History</span></div>
           <div class="project-details"><strong>Problem:</strong> PR/PO approvals depend on amount, hierarchy, department, role, segregation of duties, and SLA rules.<br><strong>Architecture:</strong> Deterministic routing states, rejection/resubmission, escalation, ERP integration, exception handling, and audit history.<br><strong>Value:</strong> Approval logic becomes transparent, governable, and easier to operate than fragmented email or spreadsheet flows.</div>
+          <div class="evidence-note"><strong>Evidence:</strong> Approval-state model · segregation-of-duties control · audit trail</div>
           <button class="project-toggle" type="button" aria-expanded="false">More detail</button>
           <div class="project-meta"><span>Approvals</span><span>ERP</span><span>SLA</span><span>Audit Trail</span></div>
         </article>
@@ -141,11 +150,11 @@
           <div class="project-meta"><span>Python</span><span>FastAPI</span><span>Agents</span><span>Workflow Automation</span></div>
         </article>
         <a class="project reveal delay-1" data-project-categories="rpa public" href="https://github.com/Mohamed3bdelwahab/RPA" target="_blank" rel="noreferrer">
-          <div><span class="project-label">Public repository</span><h3>RPA</h3><p>Practical RPA development and workflow automation work demonstrating an automation-first engineering focus.</p></div>
+          <div><span class="project-label">Public engineering proof</span><h3>RPA</h3><p>Practical RPA development and workflow automation work demonstrating deterministic execution patterns and an automation-first engineering focus.</p></div>
           <div class="project-meta"><span>Visual Basic .NET</span><span>RPA</span><span>Workflow Automation</span><strong>Open repo ↗</strong></div>
         </a>
         <a class="project reveal" data-project-categories="public" href="https://github.com/Mohamed3bdelwahab/AdvancedDaigram" target="_blank" rel="noreferrer">
-          <div><span class="project-label">Public repository</span><h3>AdvancedDaigram</h3><p>Diagram-oriented work for communicating workflows and structured ideas visually.</p></div>
+          <div><span class="project-label">Public engineering proof</span><h3>AdvancedDaigram</h3><p>Diagram-oriented work for communicating workflows, architecture ideas, and structured process concepts visually.</p></div>
           <div class="project-meta"><span>Diagramming</span><span>Workflow Design</span><strong>Open repo ↗</strong></div>
         </a>
       </div>
